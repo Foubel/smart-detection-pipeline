@@ -1,0 +1,24 @@
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "v$version\n"
+version_scheme = "semver"
+version = "0.0.1"
+update_changelog_on_bump = true
+major_version_zero = true
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+include = ["src"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
